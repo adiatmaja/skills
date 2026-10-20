@@ -28,14 +28,19 @@ Touch only what this session created; everything else is reported, never "tidied
      a project brief);
    - memory: one note per durable finding or ruling from this session, plus its `MEMORY.md`
      index line; rewrite the existing line rather than adding a second one.
-   - **mistakes this session**: each correction the user made, each retracted claim, each
-     rework or wasted run. Keep only what is likely to recur. `grep` memory for it first: if the
-     lesson is already there, the note has failed, so propose a hook or guard under "Needs you"
-     and write no second copy. If a check could catch it, propose the hook rather than a note.
-     Otherwise one `feedback` note (what happened, **Why:**, **How to apply:**). Never a diary.
+   - **mistakes this session**: the session's OWN conduct: each correction the user made, each
+     retracted claim, each rework or wasted run. Not a bug that review caught (the process
+     worked), not a refusal by an existing hook (it worked too). Keep only what is likely to
+     recur. `grep` memory AND the instruction files (CLAUDE.md, rules) first:
+     - already there: the note has failed. If a check could catch it, propose a hook under
+       "Needs you"; if not, rewrite that note in place so it names this case. Never a 2nd copy.
+     - not there: a check could catch it → propose the hook; else one `feedback` note (what
+       happened, **Why:**, **How to apply:**).
+     - an instruction that CAUSED the mistake is wrong: propose its correction under "Needs you".
+     Never a diary.
    Skip anything git history or the code already records.
 6. **Keep the index loadable.** Only the first 200 lines / 25 KB of `MEMORY.md` load; the rest is
-   silently ignored. `wc -lc` it; near the limit, merge or drop lines. A note earns its place only
+   silently ignored. `wc -lc` it; past 160 lines or 20,000 bytes, merge or drop lines. A note earns its place only
    if removing it would cause a mistake; one the code already shows, or a hook now enforces, goes.
 7. **Verify.** Re-run the inventory from step 1; the only differences from the session-start
    snapshot should be the commits you made.
