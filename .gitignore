@@ -1,0 +1,4 @@
+# Third-party skill, has its own upstream
+impeccable/
+# claude.ai-synced skills, managed by the app
+synced/
