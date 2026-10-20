@@ -1,8 +1,7 @@
 # skills
 
-Personal [Agent Skills](https://agentskills.io/specification) for Claude Code and other coding
-agents that read `SKILL.md` folders. Each folder is one skill; the repo is meant to be cloned
-straight into your skills directory, so editing a skill and committing it is the whole workflow.
+My personalised skills for my own Claude Code workflow. Each folder is one skill, and the repo
+lives directly in `~/.claude/skills`, so editing a skill and committing it is the whole workflow.
 
 ## Skills
 
