@@ -29,8 +29,9 @@ Touch only what this session created; everything else is reported, never "tidied
    - memory: one note per durable finding or ruling from this session, plus its `MEMORY.md`
      index line; rewrite the existing line rather than adding a second one.
    - **mistakes this session**: the session's OWN conduct: each correction the user made, each
-     retracted claim, each rework or wasted run. Not a bug that review caught (the process
-     worked), not a refusal by an existing hook (it worked too). Keep only what is likely to
+     retracted claim, each rework or wasted run, each claim passed on unchecked that proved
+     false. Not a bug in the work that review caught (the process worked), not a refusal by an
+     existing hook (it worked too). Keep only what is likely to
      recur. `grep` memory AND the instruction files (CLAUDE.md, rules) first:
      - already there: the note has failed. If a check could catch it, propose a hook under
        "Needs you"; if not, rewrite that note in place so it names this case. Never a 2nd copy.
