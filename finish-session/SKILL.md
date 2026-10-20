@@ -25,7 +25,7 @@ Touch only what this session created; everything else is reported, never "tidied
    worktree and its branch; sweep orphan directories.
 5. **Update the records the work changed** — in place, never appended (`grep` first):
    - the project's tracked docs/briefs that now describe stale state (open items, plan status,
-     a brief like `VIDEO-BRIEF.md`);
+     a project brief);
    - memory: one note per durable finding or ruling from this session, plus its `MEMORY.md`
      index line; rewrite the existing line rather than adding a second one.
    Skip anything git history or the code already records.
@@ -48,7 +48,7 @@ Touch only what this session created; everything else is reported, never "tidied
 |---|---|
 | Committing, stashing or reverting the user's pre-existing edits | Report them under "Not mine" |
 | Pushing a peer's unpushed commits | Report them; their session pushes |
-| Killing `php.exe`/`node.exe`/an agy process you did not start | Kill by PID you recorded; report the rest |
+| Killing `php.exe`/`node.exe`/any process you did not start | Kill by PID you recorded; report the rest |
 | Adding a memory line next to a stale one | Rewrite the stale line |
 | "Memory updated" without an index line | Write both |
 | Waiting/polling for a straggler agent | Stop it, or report it as still running |
